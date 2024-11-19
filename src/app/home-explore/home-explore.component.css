@@ -1,0 +1,17 @@
+.explore-container{
+  gap: 12px;
+  padding: 36px 18px;
+  background-color: #c9c9c9;
+  box-shadow: 6px 6px 1 0.1;
+  width: calc(100% - 36px);
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: wrap;
+  background: none;
+}

@@ -54,11 +54,12 @@ p {
 
 main {
   width: 100%;
+  border: 2px solid red;
   min-height: 100%;
-  display: flex;
+  /* display: flex; */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   box-sizing: inherit;
   position: relative;
 }
