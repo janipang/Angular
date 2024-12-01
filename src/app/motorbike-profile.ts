@@ -6,6 +6,7 @@ import { MotorbikeCategoryEnum } from "./motorbike-category-enum";
 
 export interface MotorbikeProfile {
   bikeId: string;
+  brandName: string;
   modelName: string;
   category: MotorbikeCategoryEnum;
   engineSize: EngineSizeEnum;
@@ -15,9 +16,10 @@ export interface MotorbikeProfile {
   fuelType: FuelTypeEnum;
   gearType: GearTypeEnum;
   pricePerMonth: number;
+  image: string;
   minimumRentalPeriod: number; // in month unit
   specialities: string[];
   description: string;
   available: boolean;
-  contractId: Contract;
+  contractId: string | null;
 }

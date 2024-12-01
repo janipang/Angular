@@ -1,8 +1,6 @@
 <section class="explore-container">
   <h1>รุ่นรถทั้งหมด</h1>
   <div class="content-container">
-    <card></card>
-    <card></card>
-    <card></card>
+    <app-card *ngFor="let profile of motorbikes" [profile]="profile"]></app-card>
   </div>
 </section>
