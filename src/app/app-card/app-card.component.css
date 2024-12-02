@@ -1,44 +1,53 @@
-.info-card{
+.info-card {
   display: flex;
   flex-direction: column;
   gap: 8px;
   box-shadow: 2px 2px 0 0.1;
   border-radius: 10px;
-  background-color: #C9C9C9;
+  background-color: #c9c9c9;
   border: 2px solid gray;
   min-width: 300px;
   height: 350px;
   overflow: hidden;
 }
 
-.card-image{
+.card-image-container {
+  position: relative;
   background-color: blanchedalmond;
   width: 100%;
   height: 170px;
 }
 
-.card-detail{
+.tag-engine-size {
+  position: absolute;
+  right: 0;
+  padding: 0.25rem 0.75rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 200px;
+}
+
+.card-detail {
   padding: 8px;
 }
 
-button{
+button {
   padding: 0.5rem 0.75rem;
   margin: 2rem;
   border-radius: 0.5rem;
   border: none;
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .1);;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
-button.available{
+button.available {
   background-color: maroon;
   color: white;
 }
 
-button.favorited{
+button.favorited {
   background-color: yellow;
   color: black;
 }

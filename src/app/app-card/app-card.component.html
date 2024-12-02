@@ -1,9 +1,28 @@
 <div class="info-card">
-  <div class="card-image"></div>
-  <img [src]="profile.image"/>
+  <div class="card-image-container">
+    <span
+      class="tag-engine-size"
+      [style.backgroundColor]="
+        profile.engineSize === EngineSizeEnum.SIZE_100
+          ? 'green'
+          : profile.engineSize === EngineSizeEnum.SIZE_110
+          ? 'yellow'
+          : profile.engineSize === EngineSizeEnum.SIZE_125
+          ? 'orange'
+          : profile.engineSize === EngineSizeEnum.SIZE_150
+          ? 'red'
+          : profile.engineSize === EngineSizeEnum.SIZE_160
+          ? 'brown'
+          : 'white'
+      "
+      >{{ profile.engineSize }}</span
+    >
+  </div>
   <div class="card-detail">
-    <h1>{{profile.brandName}}, {{profile.modelName}}, {{profile.engineSize}}</h1>
-    <p>{{profile.description}}</p>
+    <h1>
+      {{ profile.brandName }} {{ profile.modelName }} {{ profile.engineSize }}
+    </h1>
+    <p>{{ profile.description }}</p>
     <div class="card-action-group">
       <button [class.favorited]="favorited">สนใจ</button>
       <button [class.available]="profile.available">จองเลย</button>
