@@ -15,6 +15,7 @@ import { GearTypeEnum } from '../gear-type-enum';
   styleUrl: './home-explore.component.css',
 })
 export class HomeExploreComponent {
+  title: string = "รุ่นรถทั้งหมด"
   motorbikes: MotorbikeProfile[] = [
     {
       bikeId: 'PCX0001',

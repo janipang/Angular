@@ -9,4 +9,5 @@ import { MotorbikeProfile } from '../motorbike-profile';
 })
 export class AppCardComponent {
   @Input() profile!:MotorbikeProfile; //camel case for props name
+  favorited: boolean = true;
 }

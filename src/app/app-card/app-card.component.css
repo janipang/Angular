@@ -20,3 +20,25 @@
 .card-detail{
   padding: 8px;
 }
+
+button{
+  padding: 0.5rem 0.75rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .1);;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button.available{
+  background-color: maroon;
+  color: white;
+}
+
+button.favorited{
+  background-color: yellow;
+  color: black;
+}
