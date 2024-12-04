@@ -24,7 +24,7 @@
     </h1>
     <p>{{ profile.description }}</p>
     <div class="card-action-group">
-      <button [class.favorited]="favorited">สนใจ</button>
+      <button [class.favorited]="favorited" (click)="handleFavoriteClicked()">สนใจ</button>
       <button [class.available]="profile.available">จองเลย</button>
     </div>
   </div>

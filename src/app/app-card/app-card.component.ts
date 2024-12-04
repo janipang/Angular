@@ -13,4 +13,7 @@ export class AppCardComponent {
   @Input() profile!:MotorbikeProfile; //camel case for props name
   favorited: boolean = true;
   EngineSizeEnum = EngineSizeEnum;
+  handleFavoriteClicked(){
+    alert("added to fav");
+  }
 }

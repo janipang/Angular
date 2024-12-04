@@ -10,7 +10,7 @@ import { GearTypeEnum } from '../gear-type-enum';
 @Component({
   selector: 'app-home-explore',
   standalone: true,
-  imports: [CommonModule, AppCardComponent],
+  imports: [CommonModule, AppCardComponent, AppCardComponent],
   templateUrl: './home-explore.component.html',
   styleUrl: './home-explore.component.css',
 })
