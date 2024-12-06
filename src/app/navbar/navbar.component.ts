@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css',
 })
 export class AppNavbarComponent {
+
+  suggestedFilter = "PCX160"
   keyEnter(event: any) {
     console.log(event.key);
-    if (event.keyCode == 13) {
-      console.log('Are you sure to submit!');
-    }
   }
-  handleSubmit(){
-    alert("Are you sure to submit!")
+
+  handleSubmit(user: HTMLInputElement){
+    console.log(user.value)
   }
 }

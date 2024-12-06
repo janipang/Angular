@@ -3,8 +3,20 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem;
   background-color: brown;
+}
+
+.left-side, .right-side{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-name{
+  color: white;
 }
 
 .nav-group{
@@ -13,6 +25,23 @@ nav{
   gap: 0.25rem;
 }
 
+input{
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem;
+  border-radius: 0.5rem;
+  background-color: darkgray;
+  border: none;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
 a{
   height: 100%;
+  color: white;
+  padding: 0.35rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
 }
+
