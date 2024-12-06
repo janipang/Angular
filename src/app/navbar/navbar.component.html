@@ -1,5 +1,9 @@
 <nav>
   <h1 class="company-name">MotoBuddy</h1>
-  <div class="nav-group"><a href="/get-app">get app</a>
-    <a href="contact">contact</a></div>
+  <div>
+    <input (keyup)="keyEnter($event)" (keyup.enter)="handleSubmit()"/>
+    <div class="nav-group">
+      <a href="/get-app">get app</a> <a href="contact">contact</a>
+    </div>
+  </div>
 </nav>
