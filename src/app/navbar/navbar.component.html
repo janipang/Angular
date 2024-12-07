@@ -4,12 +4,13 @@
   </div>
   <div class="right-side">
     <input
+      [(ngModel)]="filter"
       (keyup)="keyEnter($event)"
-      (keyup.enter)="handleSubmit(user)"
-      #user
+      (keyup.enter)="handleSubmit()"
       id="userInput"
-      [defaultValue]="suggestedFilter"
+      [defaultValue]="filter"
     />
+    <h3>{{filter}}</h3>
     <div class="nav-group">
       <a href="/get-app">get app</a> <a href="contact">contact</a>
     </div>
