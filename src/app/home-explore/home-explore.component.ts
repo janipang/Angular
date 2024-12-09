@@ -6,11 +6,12 @@ import { MotorbikeCategoryEnum } from '../motorbike-category-enum';
 import { EngineSizeEnum } from '../engine-size-enum';
 import { FuelTypeEnum } from '../fuel-type-enum';
 import { GearTypeEnum } from '../gear-type-enum';
+import { HomeReturnComponent } from './home-return/home-return.component';
 
 @Component({
   selector: 'app-home-explore',
   standalone: true,
-  imports: [CommonModule, AppCardComponent, AppCardComponent],
+  imports: [CommonModule, AppCardComponent, AppCardComponent, HomeReturnComponent],
   templateUrl: './home-explore.component.html',
   styleUrl: './home-explore.component.css',
 })
