@@ -1,0 +1,15 @@
+<section class="favorite-container">
+  <span class="header-box"
+    ><h1>{{ title }}</h1>
+    <button (click)="addFavorite()">เพิ่มด่วน</button></span
+  >
+  <div class="content-container">
+    
+    @if(favorites.length == 0){
+      <p>no data found</p>}
+    @for(profile of favorites;track profile; let i = $index; let c = $count){
+    <app-card [profile]="profile"></app-card>
+    <button (click)="deleteFavorite(i)">delete</button>
+    }
+  </div>
+</section>
