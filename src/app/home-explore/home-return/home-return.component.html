@@ -1,6 +1,14 @@
 
 <section class="return-section">
   <div class="return-container">
+    <span class="user-level-tag" [ngSwitch]="membershipLevel">
+      <p *ngSwitchCase="'platinum'">platinum</p>
+      <p *ngSwitchCase="'diamond'">diamond</p>
+      <p *ngSwitchCase="'gold'">gold</p>
+      <p *ngSwitchCase="'silver'">silver</p>
+      <p *ngSwitchCase="'copper'">copper</p>
+      <p *ngSwitchDefault>-no data-</p>
+    </span>
     <h1>รถของคุณใกล้หมดสัญญา</h1>
     <span class="action-group">
       <button class="secondary">คืนรถ</button

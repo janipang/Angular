@@ -7,6 +7,13 @@
   background-color: blanchedalmond;
 }
 
+.user-level-tag{
+  padding: 0rem 2rem;
+  margin: 0.5rem;
+  border-radius: 100rem;
+  background-color: rgb(135, 120, 200, 0.4);
+  color: rgb(135, 120, 200);
+}
 .action-group{
   display: flex;
   flex-direction: row;
