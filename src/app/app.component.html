@@ -143,6 +143,14 @@
       </div>
     </div>
   </div>
+  <section>
+    <h3>Our contents</h3>
+    <div>
+      @for(title of contents; track title){
+        <p>{{title}}</p>
+      }
+    </div>
+  </section>
   <app-navbar></app-navbar>
   <app-home-explore></app-home-explore>
   <app-home-favorite></app-home-favorite>
