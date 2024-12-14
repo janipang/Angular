@@ -1,0 +1,10 @@
+<form>
+  <input
+    [(ngModel)]="username"
+    (keyup.enter)="updateProfile()"
+    id="userInput"
+    [defaultValue]="username"
+    placeholder="your username"
+  />
+  <button type="submit" (click)="updateProfile()">update</button>
+</form>

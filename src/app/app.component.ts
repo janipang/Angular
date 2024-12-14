@@ -4,6 +4,7 @@ import { HomeExploreComponent } from './home-explore/home-explore.component';
 import { AppNavbarComponent } from './navbar/navbar.component';
 import { HomeFavoriteComponent } from './home-favorite/home-favorite.component';
 import { NgFor } from '@angular/common';
+import { HomeProfileComponent } from "./home-profile/home-profile.component";
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { NgFor } from '@angular/common';
     AppNavbarComponent,
     HomeExploreComponent,
     HomeFavoriteComponent,
-  ],
+    HomeProfileComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

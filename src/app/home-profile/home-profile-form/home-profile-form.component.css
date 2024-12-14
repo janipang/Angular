@@ -1,0 +1,31 @@
+form{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(241, 202, 150);
+  padding: 1.5rem 3rem;
+}
+
+input{
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: burlywood;
+  color: brown;
+  border: none;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+  color: white;
+  background-color: brown;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: red;
+}
