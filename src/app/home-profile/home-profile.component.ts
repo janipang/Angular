@@ -15,9 +15,9 @@ export class HomeProfileComponent implements AfterViewInit{
   @ViewChild(HomeProfileFormComponent) form: any;
   
   ngAfterViewInit() {
-      this.username = this.form.username;
+      // this.username = this.form.username;
   }
-  
+
   handleOnUpdateProfile(username: string){
     this.username = username;
     console.log(this.username);
