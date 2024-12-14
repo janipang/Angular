@@ -10,11 +10,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class HomeProfileFormComponent {
   title: string = 'Profile Form';
-  username: string = '';
+  username: string = 'username from child';
 
   @Output() Event = new EventEmitter();
+  
   updateProfile() {
     this.Event.emit(this.username);
     console.log(this.username);
+  }
+
+  log(event:any){
+    console.log(event.key)
   }
 }

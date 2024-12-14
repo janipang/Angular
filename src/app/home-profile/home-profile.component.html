@@ -1,9 +1,10 @@
-<section>
+<section class="profile-section">
   <div class="profile-data-container">
-    <h2>{{ username }}</h2>
     <div class="picture"></div>
-    <p>this is the description</p>
+    <h2 class="username">{{ username }}</h2>
+    <p>your profile look's good</p>
   </div>
+
   <app-home-profile-form
     (Event)="handleOnUpdateProfile($event)"
   ></app-home-profile-form>

@@ -1,10 +1,11 @@
-<form>
+<div class="form">
+  <p>enter your username</p>
   <input
     [(ngModel)]="username"
+    (keyup)="log($event)"
     (keyup.enter)="updateProfile()"
     id="userInput"
     [defaultValue]="username"
-    placeholder="your username"
   />
-  <button type="submit" (click)="updateProfile()">update</button>
-</form>
+  <button (click)="updateProfile()">update</button>
+</div>
